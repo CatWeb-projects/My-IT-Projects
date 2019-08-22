@@ -1173,4 +1173,30 @@ body, html {
 .content-17 {
 	width: 100%;
 	height: 100%;
+	background: linear-gradient(to right, #6E416E, #827182);
+	font-family: Cuprum, Arial, Helvetical, sans-serif;
+}
+.dws-menu ul, .dws-menu ol {
+	list-style: none;
+}
+.dws-menu {
+	width: 100%;
+	height: inherit;
+}
+.dws-menu ul {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.dws-menu > ul li a {
+	display: block;
+	background: #ececed;
+	padding: 15px 30px 15px 40px;
+	font-size: 14px;
+	color: #454547;
+	text-decoration: none;
+	text-transform: uppercase;
 }

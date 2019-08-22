@@ -1,0 +1,53 @@
+// @keyframes shoot {
+//  0% {
+//  	left: 0%;
+//  }
+//  100% {
+//  	left: 100%;
+//  }
+// }
+
+.bigdiv {
+	max-width: 100%;
+	height: 510px;
+	border: 5px solid orange;
+}
+.bigdiv:hover .bullet {
+		left: calc(100% - 50px);
+		background: darkred;
+		transform: rotate(-45deg);
+	}
+.bulletdiv {
+	position: relative;
+	border: 1px solid orange;
+	height: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.bullet {
+	border: 1px solid blue;
+	background-color: purple; 
+	height: 20px;
+	width: 50px;
+	left: 0;
+	position: absolute;
+	transition-property: left;
+	transition-duration: 1s;
+	// animation: shoot 5s infinite;
+}
+.bullet1 {
+	transition-timing-function: ease-in;
+}
+.bullet2 {
+	transition-timing-function: ease-out;
+}
+.bullet3 {
+	transition-timing-function: linear;
+}
+.bullet4 {
+	transition-timing-function: ease-in-out;
+}
+.bullet5 {
+	transition-timing-function: cubic-bezier(.1, .7, 1.0, .1);
+}

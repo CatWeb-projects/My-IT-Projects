@@ -1,0 +1,22 @@
+@import 'reset';
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'footer';
+@import 'galerie';
+@import 'screen';
+@import 'video';
+@import 'columns';
+@import 'click';
+@import 'bullet';
+@import 'snake';
+@import 'bulletanimation';
+@import 'styleguide';
+@import 'transform';
+@import 'resfoto';
+@import 'slick';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

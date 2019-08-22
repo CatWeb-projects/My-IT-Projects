@@ -1,0 +1,21 @@
+.resfoto {
+	position: relative;
+	&::before {
+		content: "";
+	  display: block;
+	} 
+}
+.image {
+	object-fit: cover;
+	transition-duration: 1s;
+	width: 100%;
+	height: 100%;
+}
+.image:hover {
+	transform: scale(2.0);
+}
+.resdiv {
+	width: 33%;
+	overflow: hidden;
+	float: left;
+}

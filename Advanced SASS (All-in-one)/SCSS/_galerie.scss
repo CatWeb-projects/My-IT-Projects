@@ -1,0 +1,58 @@
+img {
+	float:left;
+	border: 1px solid blue;
+	margin: 0 5px 5px 0;
+	padding: 5px;
+	height: 200px;
+	width: 300px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.tally{
+	filter: grayscale(100%);
+}
+.cos {
+	filter: brightness(50%);
+}
+.wcm {
+	filter: contrast(50%);
+}
+.tailor {
+	filter: invert(1);
+}
+.oliver {
+	filter: saturate(3);
+}
+.tailor2 {
+	filter: opacity(50%);
+}
+.kids {
+	filter: sepia(100%);
+}
+.lee {
+	filter: blur(1px);
+}
+.sco {
+	filter: drop-shadow(0 0 15px crimson);
+}
+.idexe {
+	filter: url(#myFilter);
+}
+.color1 {
+	background: linear-gradient(blue, green, yellow);
+}
+.color2 {
+	background: linear-gradient(90deg, orange, purple);
+}
+.color3 {
+	background: linear-gradient(to top left, red, orange, green);
+}
+.color4 {
+	background: radial-gradient(red, orange, green);
+}
+.galerie {
+	height: 100%;
+}

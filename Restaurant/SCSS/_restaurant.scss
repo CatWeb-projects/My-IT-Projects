@@ -1,0 +1,435 @@
+@font-face {
+  font-family: yesevaone;
+  font-weight: normal;
+}
+@font-face {
+  font-family: myriadpro;
+  font-weight: normal;
+}
+.header{
+  background-image: url(../images/header.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  height: auto;
+  width: 100%;
+}
+.logo {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  min-height: 100px;
+  height: auto;
+  width: 160px;
+  max-width: 100%;
+  align-self: center;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-right: 100px;
+  padding-top: 60px;
+}
+.one a {
+  text-decoration: none;
+  font-family: gentiumbook;
+  font-size: 21px;
+  font-weight: lighter;
+  color: #ffffff;
+  margin: auto;
+  padding: 20px;
+}
+.fa-facebook {
+  background-image: url(../images/facebook.png);
+  background: #3B5998;
+  color: yellow;
+  padding: 10px 15px;
+  margin: auto 20px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: yellow;
+  margin: auto;
+  padding: 10px 15px;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 60px;
+}
+.title span {
+  font-family: yesevaone;
+  font-size: 90px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.prom {
+  display: inline-flex;
+  align-self: center;
+  margin-top: 60px;
+}
+.tablebook button {
+  background-color: black;
+  border-style: solid;
+  color: white;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-family: myriadpro;
+  margin: auto;
+  margin-right: 30px;
+}
+.menu button {
+  background-color: black;
+  border-style: solid;
+  color: white;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-family: myriadpro;
+  margin: auto;
+  margin-left: 30px;
+}
+.contentone {
+  background-image: url(../images/section.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  position: relative;
+}
+.titletwo {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: yesevaone;
+  font-weight: bold;
+  position: absolute;
+  left: 22%;
+  top: 12%;
+  max-width: 100%;
+  height: auto;
+}
+.advice {
+  position: absolute;
+  width: 25%;
+  max-width: 100%;
+  height: auto;
+  left: 22%;
+  top: 28%;
+  color: #4c4c4c;
+  font-size: 16px;
+  font-family: myriadpro;
+}
+.contenttwo {
+  background-image: url(../images/ingridient.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  position: relative;
+}
+.section-ingridients {
+  background-image: url(../images/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 22%;
+  display: inline-block;
+  width: 570px;
+  max-width: 100%;
+  right: 5%;
+  min-height: 550px;
+  height: auto;
+}
+.titlethree {
+  color: #fff;
+  font-size: 36px;
+  font-family: myriadpro;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+}
+.advicetwo {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-family: myriadpro;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.section-menu {
+  background-image: url(../images/menu.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  position: relative;
+}
+.head-title {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: yesevaone;
+  font-weight: bold;
+  text-align: center;
+}
+.menu-title {
+  color: #c89f2d;
+  font-size: 21px;
+  font-family: myriadpro;
+}
+.menu-description {
+  color: #4c4c4c;
+  font-size: 12px;
+  font-family: myriadpro;
+}
+.menu-group1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.heading1 {
+  margin-top: 80px;
+}
+.menu-item1-group1 {
+  margin-top: 10px;
+}
+.menu-item3-group1 {
+  margin-bottom: 15px;
+}
+.menu-group2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: auto;
+  margin-top: 80px;
+  padding-bottom: 110px;
+}
+.menu-group3 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.menu-group4 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 80%;
+  height: auto;
+  margin-bottom: 105px;
+  margin-top: -70px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.menu-item1-group4 {
+  margin-top: 15px;
+}
+.menu-item2-group4 {
+  margin-top: 0;
+}
+.menu-item3-group4 {
+  margin-bottom: 0;
+}
+.reviews {
+  background-image: url(../images/reviews.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 760px;
+  position: relative;
+}
+.section-reviews {
+  background-image: url(../images/section-reviews.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: absolute;
+  top: 20%;
+  display: inline-block;
+  width: 570px;
+  max-width: 100%;
+  min-height: 550px;
+  height: auto;
+  left: 30%;
+}
+.guest {
+  color: #fff;
+  font-size: 36px;
+  font-family: yesevaone;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+}
+.guest-text {
+  display: block;
+  color: #dde0df;
+  font-size: 25px;
+  font-family: myriadpro;
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center
+}
+.inc {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-family: myriadpro;
+}
+.reservations {
+  background-image: url(../images/reservations.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  min-height: 710px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 100px;
+  width: 100%;
+}
+.images-section {
+  top: 100px;
+  max-width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+.image-itself {
+  width: 275px;
+  height: auto;
+  max-width: 100%;
+}
+.titlefour {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: myriadpro;
+  font-weight: bold;
+  text-align: center;
+}
+.reservations-text {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-family: myriadpro;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+input {
+  border-color: #CBC5BB;
+  padding: 5px 20px;
+}
+.form-style {
+  color: #c9a131;
+  font-size: 16px;
+  font-family: myriadpro;
+  font-weight: bold;
+}
+.sub {
+  background-color: #c9a131;
+  color: #fff;
+  padding: 9px 50px;
+  margin-top: 30px;
+}
+.booking {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.booking-form {
+ width: 30%;
+ height: auto;
+ max-width: 100%;
+ margin-right: 150px;
+}
+.opt {
+  border-color: #CBC5BB;
+  padding: 8px 65px;
+}
+.footer {
+  background-image: url(../images/footer.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  min-height: 320px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer {
+  color: #fff;
+  font-size: 16px;
+  font-family: myriadpro;
+  font-weight: normal;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.footer-column {
+  width: 25%;
+  margin-bottom: 10px;
+  height: auto;
+}
+.ft1 {
+  min-height: 175px;
+}
+.ft {
+ min-height: 168px;
+}
+.active {
+  border: 5px solid orange;
+}
+.focus {
+  background-image: url(../images/ft-item.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: cover;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+@media screen and (max-width: 1200px) {
+  .image-section {
+    width: 40%;
+  }
+  .booking-form {
+    margin-right: 0;
+  }
+  .section-reviews{
+    left: 20%;
+  }
+}
+@media screen and (min-width: 1413px) and (max-width: 1610px) {
+   .booking {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section-reviews{
+    left: 0;
+  }
+}

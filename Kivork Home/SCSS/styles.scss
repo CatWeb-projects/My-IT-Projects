@@ -1,0 +1,11 @@
+@import 'reset';
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'kivorkstyles';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

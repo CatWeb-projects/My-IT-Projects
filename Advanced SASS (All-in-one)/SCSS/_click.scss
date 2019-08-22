@@ -1,0 +1,46 @@
+@keyframes frame {
+	from { 
+		opacity: 0;
+	}
+	to { 
+		opacity: 1;
+	}
+}
+
+@keyframes enlarge {
+0%, 100% {
+	padding: 10px 15px;
+	}
+50% {
+	padding: 20px;
+	background: orange;
+	}
+}
+
+.my-button {
+	display: inline-block;
+	padding: 10px 15px;
+	background: hotpink;
+	color: white;
+	text-decoration: none;
+	transition-property: padding;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+
+	&:hover {
+		padding: 20px;
+		background: darkred;
+	}
+}
+.advertising-button {
+	position: absolute;
+	display: inline-block;
+	padding: 10px 15px;
+	background: green;
+	color: white;
+	animation: enlarge 500ms infinite;
+	//animation-name: frame;
+	animation-duration: 2s;
+	//animation-iteration-count: 10;
+	//animation-direction: alternate-reverse;
+}

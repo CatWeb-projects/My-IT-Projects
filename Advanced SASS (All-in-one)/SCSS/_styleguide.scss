@@ -1,0 +1,80 @@
+.navigation {
+  top: 100px;
+  width: 100px;
+  border-radius: 4px;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+}
+
+li a.tool {
+  display: block;
+  color: orange;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: darkred;
+  color: orange;
+}
+
+li a.tool:hover:not(.active) {
+  background-color: orange;
+  color: white;
+}
+.desktop {
+  margin-left: auto;
+  width: calc(100% - 100px);
+}
+.header {
+  width: calc(100% - 100px);
+  border: 2px solid #eeeeee;
+  margin-left: auto;
+  overflow: hidden;
+}
+.tl  {
+  display: flex;
+  justify-content: flex-end;
+  //flex-direction: row;
+  align-items: center;
+  color: orange;
+  padding: 25px 33px;
+  text-decoration: none;
+}
+.phone:hover, .tablet:hover, .laptop:hover, .desktop2:hover {
+  background-color: orange;
+}
+.phone:active, .tablet:active, .laptop:active, .desktop2:active {
+  background-color: orange;
+}
+.phone {
+  width: 27px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 38px;
+  border: none;
+}
+.tablet {
+  width: 37px;
+  height: 45px;
+  object-fit: contain;
+  margin-right: 28px;
+  border: none;
+}
+.laptop {
+  width: 61px;
+  height: 48px;
+  object-fit: contain;
+  margin-right: 17px;
+  border: none;
+}
+.desktop2 {
+  width: 58px;
+  height: 52px;
+  margin-right: 66px;
+  object-fit: contain;
+  border: none;
+}
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }

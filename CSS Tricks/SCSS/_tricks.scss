@@ -1203,7 +1203,7 @@ body, html {
 	color: #454547;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease-in;
 }
 .dws-menu > ul li {
 	position: relative;
@@ -1227,7 +1227,7 @@ body, html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
 	color: #fff;
 	box-shadow: 1px 5px 10px -5px black;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease-in;
 }
 /*sub-menu*/
 .dws-menu li ul {
@@ -1242,7 +1242,6 @@ body, html {
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
   background: linear-gradient(to bottom,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
-
 }
 .dws-menu li > ul li ul {
 	position: absolute;
@@ -1294,15 +1293,23 @@ body, html {
 	}
 	.dws-menu label.toggleMenu {
 		display: block;
+		font-size: 24px;
+		font-weight: 700;
 	}
 	input.toggleMenu:checked + label.toggleMenu {
-		background: #000;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+    background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
 		color: #fff;
+		font-size: 24px;
+		font-weight: 700;
 	}
 	input.toggleMenu:checked ~ ul, 
 	input.toggleSubmenu:checked ~ ul {
 		display: block;
 		position: relative;
+		max-height: 5000px;
+		transition: max-height 2s ease-in;
 	}
 	.dws-menu label.toggleSubmenu {
 		position: absolute;

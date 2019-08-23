@@ -1239,7 +1239,10 @@ body, html {
 .dws-menu li > ul li a {
 	padding: 10px;
 	text-transform: none;
-	background: #e4e4e5;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+  background: linear-gradient(to bottom,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+
 }
 .dws-menu li > ul li ul {
 	position: absolute;
@@ -1252,8 +1255,13 @@ body, html {
 .dws-menu [type="checkbox"] {
 	display: none;
 }
+.dws-menu label.toggleSubmenu {
+	display: none;
+}
 .dws-menu label.toggleMenu {
-	background: #c9c9c9;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cdeb8e+0,a5c956+100;Green+3D+%232 */
+  background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
 	display: none;
 	padding: 30px 70px;
 	text-transform: uppercase;
@@ -1266,15 +1274,20 @@ body, html {
 	position: absolute;
 	top: 20px;
 	left: 12px;
-	font-size: 18px;
+	font-size: 24px;
 }
 
 @media all and (max-width: 800px) {
 	.dws-menu {
-		padding-top: 150px;
+		padding-top: 200px;
 	}
 	.dws-menu ul {
 		display: none;
+	}
+	.dws-menu li > ul li ul {
+		position: absolute;
+		right: auto;
+		top: auto;
 	}
 	.dws-menu ul li {
 		width: 100%;
@@ -1286,8 +1299,36 @@ body, html {
 		background: #000;
 		color: #fff;
 	}
-	input.toggleMenu:checked ~ ul {
+	input.toggleMenu:checked ~ ul, 
+	input.toggleSubmenu:checked ~ ul {
 		display: block;
+		position: relative;
+	}
+	.dws-menu label.toggleSubmenu {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: block;
+	}
+	input.toggleSubmenu:checked ~ a {
+		background: #454547;
+		color: #fff;
+	}
+	.dws-menu label.toggleSubmenu .fa::before {
+		content: "\f0d7";
+		color: #454547;
+	}
+	.dws-menu label.toggleSubmenu .fa {
+		position: absolute;
+		top: 5px;
+		right: 30px;
+	}
+	.dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before {
+		content: "\f0d8";
+		color: #fff;
 	}
 }
 

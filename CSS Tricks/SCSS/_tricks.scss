@@ -1249,6 +1249,47 @@ body, html {
 .dws-menu li:hover > ul {
 	display: block;
 }
+.dws-menu [type="checkbox"] {
+	display: none;
+}
+.dws-menu label.toggleMenu {
+	background: #c9c9c9;
+	display: none;
+	padding: 30px 70px;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+}
+.dws-menu label.toggleMenu .fa {
+	position: absolute;
+	top: 20px;
+	left: 12px;
+	font-size: 18px;
+}
+
+@media all and (max-width: 800px) {
+	.dws-menu {
+		padding-top: 150px;
+	}
+	.dws-menu ul {
+		display: none;
+	}
+	.dws-menu ul li {
+		width: 100%;
+	}
+	.dws-menu label.toggleMenu {
+		display: block;
+	}
+	input.toggleMenu:checked + label.toggleMenu {
+		background: #000;
+		color: #fff;
+	}
+	input.toggleMenu:checked ~ ul {
+		display: block;
+	}
+}
 
 .content-18 {
  background-image: url("https://dwstroy.ru/lessons/les3373/demo//img/bg.png");
@@ -1282,7 +1323,7 @@ body, html {
 .container-3 a:hover {
  text-decoration: none;
 }
-.dws-input input[type="text"],.dws-input input[type="password"]{
+.dws-input input[type="text"], .dws-input input[type="password"]{
  width: 300px;
  height:50px;
  font-size: 18px;

@@ -1167,15 +1167,18 @@ body, html {
 		right: 40px;
 	}
 	.text-content-box {
+		display: block;
+	}
+	.header-menu > ul {
 		display: none;
 	}
-	.header-menu #check-2:checked .menu-2 {
-		right: 0;
+	input.toggleMenuButton:checked ~ label.toggleMenuButton {
+		display: block;
 	}
 }
 .content-17 {
 	width: 100%;
-	height: 100%;
+	height: 120%;
 	background: linear-gradient(to right, #6E416E, #827182);
 	font-family: Cuprum, Arial, Helvetical, sans-serif;
 }
@@ -1277,9 +1280,6 @@ body, html {
 }
 
 @media all and (max-width: 800px) {
-	.dws-menu {
-		padding-top: 200px;
-	}
 	.dws-menu ul {
 		display: none;
 	}

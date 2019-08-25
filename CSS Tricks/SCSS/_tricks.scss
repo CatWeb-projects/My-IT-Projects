@@ -1170,10 +1170,13 @@ body, html {
 		display: block;
 	}
 	.header-menu > ul {
-		display: none;
-	}
-	input.toggleMenuButton:checked ~ label.toggleMenuButton {
 		display: block;
+	}
+	input.toggleMenuButton:checked + label.toggleMenuButton {
+		color: blue;
+	}
+	input.toggleMenuButton:checked ~ .header-menu > ul {
+		display: flex;
 	}
 }
 .content-17 {

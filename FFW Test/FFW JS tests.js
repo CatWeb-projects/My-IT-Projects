@@ -39,8 +39,24 @@ const data = {
 let names = data.names
 console.log(names);
 
-let enrolled = data.enrolled = false;
-console.log(enrolled);
+let enrolled = data.enrolled
+function empty(enrolled)
+{
+  if(enrolled == '')
+  { 
+    return false; 
+  }
+}
+console.log(empty());
 
 let marks = data.marksss;
 console.log(marks);
+
+// 4-th question
+// 5-th question
+
+// i know 3 types
+
+$(".articles .node");
+$(".articles div");
+$("div.node");

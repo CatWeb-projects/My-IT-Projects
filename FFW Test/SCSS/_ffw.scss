@@ -17,6 +17,7 @@ html, body {
 	height: 50%;
 	border: 2px solid grey;
 	border-radius: 20px;
+	text-align: center;
 }
 .green-cube {
 	width: 200px;
@@ -37,18 +38,44 @@ html, body {
 	font-weight: 800;
 }
 .green-cube-text {
-	text-align: center;
 	margin-top: 30px;
+	font-weight: 700;
 }
 .little-cubes {
 	width: 100px;
 	height: 100px;
 	border-radius: 20px;
-	margin: 30px;
+	margin-right: 20px;
+	border: 2px solid black;
+	box-shadow: inset 0px 0px 0px 2px #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+.little-cubes div {
+	margin-left: 20px;
+	font-size: 24px;
+	color: lightgreen;
+	opacity: 0.5;
+	font-weight: 800;
 }
 .cube1 {
 	background-color: pink;
+	margin-bottom: 20px;
 }
 .cube2 {
 	background-color: blue;
+}
+.cube-common {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.right-div {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 }

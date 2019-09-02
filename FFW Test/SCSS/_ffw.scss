@@ -6,8 +6,17 @@ html, body {
 	height: 100%;
 	width: 100%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.div-container {
+	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 80%;
+	height: 50%;
+	border: 2px solid grey;
+	border-radius: 20px;
 }
 .green-cube {
 	width: 200px;
@@ -15,6 +24,21 @@ html, body {
 	background-color: green;
 	border-radius: 20px;
 	border: 2px solid black;
+	box-shadow: inset 0px 0px 0px 2px #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+.green-cube div {
+	margin-left: 20px;
+	font-size: 40px;
+	color: lightgreen;
+	opacity: 0.5;
+	font-weight: 800;
+}
+.green-cube-text {
+	text-align: center;
+	margin-top: 30px;
 }
 .little-cubes {
 	width: 100px;

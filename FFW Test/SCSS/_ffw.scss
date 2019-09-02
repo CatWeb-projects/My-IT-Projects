@@ -6,8 +6,25 @@ html, body {
 	height: 100%;
 	width: 100%;
 	display: flex;
+	flex-flow: column;
 	justify-content: center;
 	align-items: center;
+}
+.selection-fonts {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.select {
+	font-weight: 700;
+	font-size: 24px;
+}
+.choose-fonts {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 18px;
+	color: grey;
 }
 .div-container {
 	display: flex;
@@ -78,4 +95,12 @@ html, body {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
+}
+div li {
+	list-style: none;
+}
+div li:before {
+	content: "\2022";
+  color: grey;
+  font-weight: bold;
 }

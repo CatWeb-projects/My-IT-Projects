@@ -22,10 +22,17 @@ html, body {
 .choose-fonts {
 	display: flex;
 	justify-content: space-between;
+}
+.choose-fonts a {
 	font-weight: 700;
 	font-size: 18px;
 	color: grey;
+	text-decoration: none;
+	text-transform: uppercase;
 }
+/*.choose-fonts a:focus {
+	color: orange;
+}*/
 .div-container {
 	display: flex;
 	justify-content: space-around;
@@ -35,6 +42,9 @@ html, body {
 	border: 2px solid grey;
 	border-radius: 20px;
 	text-align: center;
+}
+.left-div a {
+	text-decoration: none;
 }
 .green-cube {
 	width: 200px;
@@ -47,11 +57,11 @@ html, body {
 	justify-content: flex-start;
 	align-items: flex-end;
 }
-.green-cube div {
+.green-cube span {
 	margin-left: 20px;
 	font-size: 40px;
 	color: lightgreen;
-	opacity: 0.5;
+	opacity: 0.8;
 	font-weight: 800;
 }
 .green-cube-text {
@@ -69,25 +79,35 @@ html, body {
 	justify-content: flex-start;
 	align-items: flex-end;
 }
-.little-cubes div {
+.little-cubes span {
 	margin-left: 20px;
 	font-size: 24px;
-	color: lightgreen;
-	opacity: 0.5;
+	opacity: 0.8;
 	font-weight: 800;
 }
 .cube1 {
-	background-color: pink;
+	background-color: #E501FE;
 	margin-bottom: 20px;
+}
+
+.cube1 span {
+	color: lightpink;
 }
 .cube2 {
 	background-color: blue;
 }
+.cube2 span {
+	color: lightblue;
+}
+
 .cube-common {
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+}
+.cube-common a {
+	text-decoration: none;
 }
 .right-div {
 	height: 100%;
@@ -103,4 +123,10 @@ div li:before {
 	content: "\2022";
   color: grey;
   font-weight: bold;
+}
+.left-div a:focus, .cube-common a:focus {
+	opacity: 0.5;
+}
+.active a {
+  color: orange;
 }

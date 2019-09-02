@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+}
+.main-div {
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.green-cube {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+.little-cubes {
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+	margin: 30px;
+}
+.cube1 {
+	background-color: pink;
+}
+.cube2 {
+	background-color: blue;
+}

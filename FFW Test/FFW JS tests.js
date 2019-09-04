@@ -15,21 +15,45 @@ console.log(my_variable);
 
 // 2-nd question
 
+function parse_URL(url) {
+    var a = document.createElement('a');
+    a.href = url;
+    return {
+        source: url,
+        protocol: a.protocol.replace(':', ''),
+        host: a.hostname,
+        port: a.port,
+        query: a.search,
+        params: (function () {
+            var ret = {},
+                seg = a.search.replace(/^\?/, '').split('&'),
+                len = seg.length,
+                i = 0,
+                s;
+            for (; i < len; i++) {
+                if (!seg[i]) {
+                    continue;
+                }
+                s = seg[i].split('=');
+                ret[s[0]] = s[1];
+            }
+            return ret;
+        })(),
+        file: (a.pathname.match(/\/([^\/?#]+)$/i) || [, ''])[1],
+        hash: a.hash.replace('#', ''),
+        path: a.pathname.replace(/^([^\/])/, '/$1'),
+        relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [, ''])[1],
+        segments: a.pathname.replace(/^\//, '').split('/')
+    };
+}
 
-let url = new URL("https://my-ffw-example.com/dir/subdir/file.html#hash");
-
-// this Return 
-// { hash:"#hash", host:"my-ffw-example.com", hostname:"my-ffw-example.com", 
-// href:"https://my-ffw-example.com/dir/subdir/file.html#hash", origin:"https://my-ffw-example.com", 
-// password:"", pathname:"/dir/subdir/file.html", 
-// port:"", protocol:"http:", search: "", username: "" }
-
+console.log(parse_URL('https://my-ffw-example.com/dir/subdir/file.html#hash'));
 
 // 3-rd question
 
 const data = {
 	names: ['A', 'B', 'C'],
-	enrolled: true,
+	enrolled: "",
 	marksss: {
 		'A' : [1,1,1],
 		'B' : [2,2,2],
@@ -45,25 +69,45 @@ function empty(enrolled)
   if(enrolled = !enrolled)
   { 
     return false; 
+  } else {
+    if(enrolled == enrolled)
+    return true;
   }
 }
+console.log(empty(false));
+console.log(empty(true));
 console.log(empty());
 
 let marks = data.marksss;
 console.log(marks);
 
 // 4-th question
-
+let functionality = {
+  isActive: false,
+  checkTriggered:function() {
+		// some code
+  },
+  clickListener: function(event) {
+    event.preventDefault();
+    this.isActive = !this.isActive;
+    this.checkTriggered();
+  },
+  addListeners: function() {
+    document
+    .querySelectorAll(selectors: 'a')
+    .addEventListener(this.clickListener);
+  }
+};
+functionality.addListeners();
 
 
 // 5-th question
 
-// i know 3 types
+// i know 2 types
 
 $(".articles .node");
 $(".articles div");
-$("div.node");
-
+// $("div.node"); -- this one select all .node classes
 
 // 6-th question
 

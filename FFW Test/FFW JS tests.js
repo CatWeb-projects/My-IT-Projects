@@ -20,9 +20,9 @@ console.log(my_variable);
 
 let obj = new parseUrl("https://my-ffw-example.com/dir/subdir/file.html#hash");
 
-alert(obj.hash);
-alert(obj.hostname);
-alert(obj.pathname);
+console.log(obj.hash);//user
+console.log(obj.hostname);//hostname
+console.log(obj.pathname);//pathname
 
 // this Return 
 // { hash:"#hash", host:"my-ffw-example.com", hostname:"my-ffw-example.com", 

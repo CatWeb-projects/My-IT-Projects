@@ -15,39 +15,19 @@ console.log(my_variable);
 
 // 2-nd question
 
-function parse_URL(url) {
-    var a = document.createElement('a');
-    a.href = url;
-    return {
-        source: url,
-        protocol: a.protocol.replace(':', ''),
-        host: a.hostname,
-        port: a.port,
-        query: a.search,
-        params: (function () {
-            var ret = {},
-                seg = a.search.replace(/^\?/, '').split('&'),
-                len = seg.length,
-                i = 0,
-                s;
-            for (; i < len; i++) {
-                if (!seg[i]) {
-                    continue;
-                }
-                s = seg[i].split('=');
-                ret[s[0]] = s[1];
-            }
-            return ret;
-        })(),
-        file: (a.pathname.match(/\/([^\/?#]+)$/i) || [, ''])[1],
-        hash: a.hash.replace('#', ''),
-        path: a.pathname.replace(/^([^\/])/, '/$1'),
-        relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [, ''])[1],
-        segments: a.pathname.replace(/^\//, '').split('/')
-    };
-}
 
-console.log(parse_URL('https://my-ffw-example.com/dir/subdir/file.html#hash'));
+let obj = new ParseUrl("https://my-ffw-example.com/dir/subdir/file.html#hash");
+
+alert(obj.hash);
+alert(obj.hostname);
+alert(obj.pathname);
+
+// this Return 
+// { hash:"#hash", host:"my-ffw-example.com", hostname:"my-ffw-example.com", 
+// href:"https://my-ffw-example.com/dir/subdir/file.html#hash", origin:"https://my-ffw-example.com", 
+// password:"", pathname:"/dir/subdir/file.html", 
+// port:"", protocol:"http:", search: "", username: "" }
+
 
 // 3-rd question
 
@@ -111,20 +91,49 @@ $(".articles div");
 
 // 6-th question
 
-document.write(user.jason); // Output: user
-document.write(user.jason.name); // Output: name
-document.write(user.jason.e_mail); // Output: e_mail
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+// Output
+{
+  username: '',
+  email: '',
+  userId: ''
+}
+/*
+<div class="user">
+	<h3 class="user-name">{username}</h3>
+	<div class="user-email">{email}</div>
+	<div class="user-email">{userId}</div>
+</div>
+
+
+*/
 
 // 7-th question
 
 // componentWillMount
 // componentWillReceiveProps
 // componentWillUpdate
-// Because of this, we will be adding an “UNSAFE_” prefix to these lifecycles
+// Because of this, we will be adding an “UNSAFE_” prefix to these lifecycles.
+// sometimes it is needed a little more control over how and when your component is updating.
 
 // 8-th question
 
-// button 1 is equal to button 4 and button 2 with 3
-// When we click button 1 , it calls alert(this.text) wich is 'This is an example text' will appear as alert.
-// handler  is equal with handler 3 so => button 1 = button 4
-// When we click button 2 handler 1 returns handler 2 , so => button 2 = button 3 
+// button 1(First) is not correct because it does not bound to this class, 
+// the correct form is for button 2(Second) <button onClick={this.handleClick1}>Second</button> or in case this.handleClick1 = this.handleClick1.bind(this), 
+// so <button onclick="(this.handler1)" is for html, not for react,
+// also it returns undefined,
+// this.handleClick2 = this.handleClick1.bind(this) is not correct it must be like this for example
+// this.handleClick1 = this.handleClick1.bind(this)
+
+/* 
+button 3(third) is not correct
+for correct form we can put
+	this.handleClick4 = this.handleClick4.bind(this)
+	<button onClick={this.handleClick4}>Third</button>
+
+<button onClick={this.handleClick3}>Fourth</button>
+We are using arrow functions because they bind automatically to the context
+*/

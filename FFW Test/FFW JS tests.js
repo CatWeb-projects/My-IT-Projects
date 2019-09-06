@@ -1,3 +1,5 @@
+// Solved by Uzun Tudor
+
 // 1-st question
 console.log(my_variable);
 var my_variable = 1;
@@ -16,7 +18,7 @@ console.log(my_variable);
 // 2-nd question
 
 
-let obj = new ParseUrl("https://my-ffw-example.com/dir/subdir/file.html#hash");
+let obj = new parseUrl("https://my-ffw-example.com/dir/subdir/file.html#hash");
 
 alert(obj.hash);
 alert(obj.hostname);

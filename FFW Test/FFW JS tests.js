@@ -122,18 +122,18 @@ fetch('https://jsonplaceholder.typicode.com/users')
 // 8-th question
 
 // button 1(First) is not correct because it does not bound to this class, 
-// the correct form is for button 2(Second) <button onClick={this.handleClick1}>Second</button> or in case this.handleClick1 = this.handleClick1.bind(this), 
+// the correct form is for button 2(Second) <button onClick={this.handler1}>Second</button> or in case this.handler1 = this.handler1.bind(this), 
 // so <button onclick="(this.handler1)" is for html, not for react,
 // also it returns undefined,
-// this.handleClick2 = this.handleClick1.bind(this) is not correct it must be like this for example
-// this.handleClick1 = this.handleClick1.bind(this)
+// this.handler2 = this.handler1.bind(this) is not correct it must be like this for example
+// this.handler1 = this.handler1.bind(this)
 
 /* 
 button 3(third) is not correct
 for correct form we can put
-	this.handleClick4 = this.handleClick4.bind(this)
-	<button onClick={this.handleClick4}>Third</button>
+	this.handler4 = this.handler4.bind(this)
+	<button onClick={this.handler4}>Third</button>
 
-<button onClick={this.handleClick3}>Fourth</button>
+<button onClick={this.handler3}>Fourth</button>
 We are using arrow functions because they bind automatically to the context
 */

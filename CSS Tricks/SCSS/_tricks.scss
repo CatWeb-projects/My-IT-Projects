@@ -1564,6 +1564,7 @@ content: "\f023";
 }
 .content-20 {
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -1644,4 +1645,14 @@ content: "\f023";
 }
 .container-5 .card-2:hover .face.face2 h2 {
 	font-size: 2em;
+}
+@media screen and (max-width: 1100px) {
+	.content-20 {
+		height: auto;
+		padding: 20px 0;
+	}
+	.container-5 {
+		width: initial;
+		margin: auto;
+	}
 }

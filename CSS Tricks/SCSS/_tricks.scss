@@ -980,14 +980,11 @@ body, html {
 	margin-left: 20px;
 	cursor: pointer;
 }
-.comp .task {
+.comp .task, .notcomp .task {
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	background: rgba(0,0,0,.5);
 	color: #fff;
-}
-.comp , .notcomp {
-	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 20px;
-	font-weight: 400;
 }
 .content-15 {
 	position: relative;
@@ -1009,7 +1006,7 @@ body, html {
 	background: #ffc107;
 	margin: 10px;
 	border-radius: 30%;
-	box-shadow: 0 5px 15px -5px #00000070;
+	box-shadow: -5px 5px 35px -5px #e91e63;
 	color: #3498db;
 	overflow: hidden;
 	position: relative;

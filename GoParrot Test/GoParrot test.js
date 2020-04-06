@@ -47,36 +47,9 @@ const sorter = {
 }
 
 
-data.sort(function sortByDay(a, b) {
-  let day1 = a.day.toLowerCase();
-  let day2 = b.day.toLowerCase();
-  return sorter[day1] - sorter[day2];
-});
 
+let sortByDay = data.sort((a, b) => sorter[a.day] - sorter[b.day]);
 
-const groupBy = key => array =>
-  array.reduce((objectsByKeyValue, obj) => {
-    const value = obj[key];
-    objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj);
-    return objectsByKeyValue;
-  }, {});
-
-const groupByFrom = groupBy("from");
-const groupedData = groupByFrom(data);
-let finalStr = '';
-
-Object.keys(groupedData).forEach((key) => {
-  const curGrp = groupedData[key];
-  if (curGrp.length > 1) {
-    finalStr += '\n';
-    finalStr += `${curGrp[0].day} - ${curGrp[curGrp.length - 1].day}: `;
-    finalStr += `${curGrp[0].from} - ${curGrp[0].to}`
-  }
-  else if (curGrp.length === 1) {
-    finalStr += '\n';
-    finalStr += `${curGrp[0].day}: `;
-    finalStr += `${curGrp[0].from} - ${curGrp[0].to}`
-  }
-});
-
-console.log('final output is: ', finalStr);
+for(let info of data) {
+  console.log(`${info.day} : ${info.from} - ${info.to} `)
+}

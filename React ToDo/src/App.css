@@ -1,0 +1,14 @@
+.app {
+    padding: 0 1rem;
+}
+.button {
+    display: inline-block;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #666;
+}

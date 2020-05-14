@@ -35,7 +35,15 @@ const buttonStyle = {
     border: 'none',
     padding: '5px 10px',
     float: 'right',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    outline: 'none'
+}
+
+//PropTypes
+TodoItem.propTypes = {
+    todos: PropTypes.array.isRequired,
+    delTodo: PropTypes.func.isRequired,
+    markComplete: PropTypes.func.isRequired
 }
 
 export default TodoItem;

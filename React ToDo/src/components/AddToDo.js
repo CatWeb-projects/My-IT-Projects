@@ -6,7 +6,10 @@ class AddToDo extends React.Component {
         title: ''
     }
     
-    handleClick = (e) => this.setState({ [e.target.name]: e.target.value })
+    handleClick = (e) => {
+        const {name, value} = e.target
+        this.setState({ [name]: value })
+    }
 
     handleSubmit = (e) => {
         e.preventDefault();

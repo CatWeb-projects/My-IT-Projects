@@ -30,7 +30,8 @@ class App extends React.Component {
   //Del Todo
   delTodo = (id) => {
     axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
-    .then(response => this.setState({ todos: [ ...this.state.todos.filter(todo => todo.id !== id)] }))
+    this.setState({ todos: [ ...this.state.todos.filter(todo => todo.id !== id)] })
+    // .then(response => this.setState({ todos: [ ...this.state.todos.filter(todo => todo.id !== id, response.data)] }))  - this is to wait the respond from server
   }
 
   //Add Todo

@@ -6,11 +6,11 @@ class AddToDo extends React.Component {
         title: ''
     }
 
-    handleClick = (e) => this.setState({ title: e.target.value })
+    handleClick = (e) => this.setState({ [e.target.name]: e.target.value })
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.AddToDo(this.state.title);
+        this.props.addToDo(this.state.title);
         this.setState({ title: '' });
     }
 
@@ -34,9 +34,9 @@ class AddToDo extends React.Component {
     }
 }
 
-// //PropTypes
-// AddToDo.propTypes = {
-//     AddToDo: PropTypes.array.isRequired
-// }
+//PropTypes
+AddToDo.propTypes = {
+    addToDo: PropTypes.func.isRequired
+}
 
 export default AddToDo

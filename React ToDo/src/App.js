@@ -35,7 +35,7 @@ class App extends React.Component {
   }
 
   //Add Todo
-  AddToDo = (title) => {
+  addToDo = (title) => {
     axios.post('https://jsonplaceholder.typicode.com/todos',  {
       title,
       completed: false
@@ -50,7 +50,7 @@ class App extends React.Component {
           <Header />
           <Route exact path="/" render={props => (
             <React.Fragment>
-              <AddToDo AddToDo={this.AddToDo}/>
+              <AddToDo addToDo={this.addToDo}/>
               <Todos todos={this.state.todos}
                markComplete={this.markComplete}
                delTodo={this.delTodo}/>

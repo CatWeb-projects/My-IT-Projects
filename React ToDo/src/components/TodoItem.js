@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 
 export class TodoItem extends Component {
     render() {
-        const {id} = this.props.todo
+        const {title, id} = this.props.todo
         return (
             <div style={getStyle}>
                 <input type="checkbox" checked={this.props.todo.completed} onChange={this.props.markComplete.bind(this, id)} /> {' '}
-                <span style={this.props.todo.completed ? checkStyle : null}>{ this.props.todo.title }</span>
+                <span style={this.props.todo.completed ? checkStyle : null}>{ title }</span>
                 <button onClick={this.props.delTodo.bind(this, id)} style={buttonStyle}>X</button>
             </div>
         )

@@ -1,0 +1,357 @@
+.main-div {
+	padding: 30px 5%;
+	background-color: #dbdbd8;
+}
+.campaign-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container-info {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+}
+.container-info div {
+	margin-left: 20px;
+}
+.date-select {
+	background: none;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+}
+.updated-class button {
+	border-radius: 5px;
+	background: #fff;
+	color: #989898;
+	font-size: 16px;
+}
+.search-div {
+	position: relative;
+	color: #989898;
+	input {
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	padding-left: 3%;
+	}
+	input:focus {
+		outline: none;
+	}
+	i {
+		position: absolute;
+		left: 1%;
+		top: 50%;
+		transform: translate(0, -50%);
+		
+	}
+	::placeholder {
+		font-size: 16px;
+	}
+}
+.updated-class button:focus {
+	outline: none;
+}
+.table-container {
+	margin-top: 50px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 2px solid #656161;
+}
+.table-container input {
+	height: 20px;
+	width: 20px;
+	background: #fff;
+	appearance: none;
+	border: 2px solid #656161;
+	border-radius: 5px;
+}
+.table-general-info, .table-holder {
+	border-top: 2px solid #656161;
+}
+.table-menu {
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px;
+	> select {
+		background-color: #dbdbd8;
+		padding: 0 30px 0 10px;
+		font-size: 16px;
+		border-radius: 5px;
+		margin-right: 20px;
+	}
+}
+.create-campaign {
+	background-color: #14d46a;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #fff;
+	> i {
+		margin-right: 10px;
+	}
+}
+.table-general-info {
+	background-color: #dbdbd8;
+	padding: 10px;
+	font-size: 16px;
+	color: #656161;
+	font-weight: 600;
+}
+.fa-long-arrow-alt-down {
+	margin-left: 5px;
+}
+.table-holder {
+	padding: 10px;
+  font-size: 16px;
+}
+.flex-ordering > div {
+	display: flex;
+	align-items: center;
+}
+.toggle-switcher {
+	display: flex;
+	justify-content: space-between;
+	> div {
+		position: relative;
+	}
+	.click-it {
+		position: relative;
+		z-index: 3;
+		cursor: pointer;
+		opacity: 0.5;
+	}
+}
+.fa-check {
+	position: absolute;
+	top: 7%;
+	left: 10%;
+	opacity: 0;
+	z-index: 1;
+}
+.toggle-switcher .click-it:checked ~ .fa-check {
+	opacity: 1 !important;
+}
+#click-switcher {
+	position: relative;
+	width: 40px;
+	height: 20px;
+	background-color: #c6c6c6;
+	outline: none;
+	border-radius: 20px;
+	transition: .5s;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+	border: none;
+	cursor: pointer;
+}
+#click-switcher:checked {
+	background: #14d46a;
+}
+#click-switcher:before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transition: .5s;
+	transform: scale(1.1);
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+#click-switcher:checked:before {
+	left: 20px;
+}
+.branch-text {
+	font-size: 8px;
+	span:first-child {
+		font-size: 12px;
+	}
+}
+.start-text {
+  font-size: 12px;
+}
+.branch-text, .start-text {
+	flex-direction: column;
+  align-items: flex-start !important;
+}
+.status-check {
+	position: relative;
+}
+.status-check:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+  transform: translate(0, -50%);
+	left: 0;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #989898;
+}
+.check-if-active:before {
+	background-color: #14d46a;
+}
+.cr-unit {
+	justify-content: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: #989898;
+}
+.campaign-name {
+	color: #505ad2;
+	font-weight: 600;
+}
+.own-progress-bar {
+	width: 100%;
+	height: 20px;
+	border-radius: 20px;
+	border: 2px solid #989898;
+}
+.progress-bar-container {
+	flex-direction: column;
+  > div:last-child {
+  	font-size: 12px;
+  }
+}
+div.col-1.progress-bar-container {
+		padding: 0 !important;
+}
+@media screen and (max-width: 1200px) {
+	.main-div {
+		padding: 5px;
+	}
+	.table-holder, .table-menu, .table-general-info {
+		padding: 2px;
+		font-size: 12px !important;
+	}
+	.table-container input {
+		width: 15px;
+		height: 15px;
+	}
+	#click-switcher {
+		width: 20px;
+		height: 10px;
+	}
+	#click-switcher:before {
+		width: 10px;
+		height: 10px;
+	}
+	#click-switcher:checked:before {
+		left: 10px;
+	}
+	.cr-unit, .container-info, .container-info button, .table-menu select {
+		font-size: 12px;
+	}
+	.own-progress-bar {
+		height: 15px;
+	}
+	.search-div {
+		input {
+			height: 30px;
+			font-size: 16px;
+		}
+		i {
+			font-size: 16px;
+		}
+		::placeholder {
+			font-size: 16px;
+		}
+	}
+	.create-campaign {
+		padding: 1px 5px;
+	}
+	.campaigns-container-text h3 {
+		font-size: 25px
+	}
+}
+@media screen and (max-width: 768px) {
+	.toggle-switcher {
+		padding-right: 0 !important;
+	}
+	.table-holder, .table-menu, .table-general-info, .branch-text span:first-child,
+  .start-text, .cr-unit, .progress-bar-container > div:nth-child(2),
+  .container-info, .container-info button {
+		font-size: 8px !important;
+	}
+	.own-progress-bar {
+		height: 10px;
+	}
+	.search-div {
+		input {
+			height: 22px;
+			font-size: 12px;
+		}
+		i {
+			font-size: 12px;
+			top: 60%;
+		}
+		::placeholder {
+			font-size: 12px;
+		}
+	}
+	.table-container input {
+		width: 10px;
+		height: 10px;
+		border-radius: 2px;
+	}
+	#click-switcher {
+		width: 30px;
+		height: 10px;
+	}
+	#click-switcher:before {
+		width: 10px;
+		height: 10px;
+	}
+	#click-switcher:checked:before {
+		left: 10px;
+	}
+	.campaigns-container-text h3 {
+		font-size: 18px
+	}
+}
+@media screen and (max-width: 512px) {
+	.table-holder, .table-menu, .table-general-info, .branch-text span:first-child,
+  .start-text, .cr-unit, .progress-bar-container > div:nth-child(2),
+  .container-info, .container-info button {
+		font-size: 6px !important;
+	}
+	.cr-unit, .container-info, .container-info button, .table-menu select {
+		font-size: 8px;
+	}
+	.table-container input {
+		width: 6px;
+		height: 6px;
+		border-radius: 1px;
+	}
+	#click-switcher {
+		width: 12px;
+		height: 6px;
+	}
+	#click-switcher:before {
+		width: 6px;
+		height: 6px;
+	}
+	#click-switcher:checked:before {
+		left: 6px;
+	}
+	.campaigns-container-text h3 {
+		font-size: 16px
+	}
+	.search-div {
+		input {
+			height: 18px;
+			font-size: 8px;
+		}
+		i {
+			font-size: 8px;
+			top: 70%;
+		}
+		::placeholder {
+			font-size: 8px;
+		}
+	}
+}

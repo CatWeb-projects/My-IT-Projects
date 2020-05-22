@@ -13,11 +13,6 @@ toggle = (e) => {
 }
 toggle();
 
-
-
-
-
-
 let timeButton = document.querySelector('.updated-class button').addEventListener('click', updateTime = (e) => {
 	const now = new Date();
 

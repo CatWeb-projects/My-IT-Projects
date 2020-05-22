@@ -1,12 +1,22 @@
-let checkButton = document.querySelector('#click-switcher', '.click-it').addEventListener('click', toggle = (e) => {
+toggle = (e) => {
+	let checkButton = document.querySelectorAll('#click-switcher');
 	let classActive = document.querySelector('.status-check');
-	e.target.value = checkButton;
-	checkButton = !checkButton;
-	checkButton == true ? 
-	(classActive.classList.add('check-if-active'), classActive.innerHTML = 'Active') : 
-	(classActive.classList.remove('check-if-active'), classActive.innerHTML = 'Inactive')
-	console.log(checkButton);
-}, true);
+		checkButton.forEach(el => {
+			el.addEventListener('click', (e) => {
+			e.target.checked ? el = true : el = false
+			el == true ? 
+			(classActive.classList.add('check-if-active'), classActive.innerHTML = 'Active') : 
+			(classActive.classList.remove('check-if-active'), classActive.innerHTML = 'Inactive')
+			console.log(el);
+		}, false);
+	})
+}
+toggle();
+
+
+
+
+
 
 let timeButton = document.querySelector('.updated-class button').addEventListener('click', updateTime = (e) => {
 	const now = new Date();

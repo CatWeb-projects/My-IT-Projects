@@ -299,7 +299,7 @@ div.col-1.progress-bar-container {
 		border-radius: 2px;
 	}
 	#click-switcher {
-		width: 30px;
+		width: 20px;
 		height: 10px;
 	}
 	#click-switcher:before {
@@ -323,8 +323,8 @@ div.col-1.progress-bar-container {
 		font-size: 8px;
 	}
 	.table-container input {
-		width: 6px;
-		height: 6px;
+		width: 7px;
+		height: 7px;
 		border-radius: 1px;
 	}
 	#click-switcher {
@@ -340,6 +340,10 @@ div.col-1.progress-bar-container {
 	}
 	.campaigns-container-text h3 {
 		font-size: 16px
+	}
+	.status-check:before {
+		left: 15%;
+    padding: 3px;
 	}
 	.search-div {
 		input {

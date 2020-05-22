@@ -213,6 +213,7 @@
 }
 .progress-bar-container {
 	flex-direction: column;
+	justify-content: flex-end;
   > div:last-child {
   	font-size: 12px;
   }

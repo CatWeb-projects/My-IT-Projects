@@ -6,457 +6,457 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>EMP</title>
 </head>
 <body>
-	<div class="main-div">
+<div class="main-div">
     <div class="campaign-container">
-			<div class="campaigns-container-text">
-				<h3>Campaigns</h3>
-			</div>
-			<div class="container-info">
-				<select class="date-select" name="" id="">
-					<option value="Last 30 Days:">
-						Last 30 Days: 8 Jul 2019 - 6 Aug 2019
-					</option>
-				</select>
-				<div class="updated-class">
-					<span>Updated 5 min ago <button><i class="fas fa-sync"></i></button> </span>
-				</div>
-			</div>
+        <div class="campaigns-container-text">
+            <h3>Campaigns</h3>
+        </div>
+        <div class="container-info">
+            <select class="date-select" name="" id="">
+                <option value="Last 30 Days:">
+                    Last 30 Days: 8 Jul 2019 - 6 Aug 2019
+                </option>
+            </select>
+            <div class="updated-class">
+                <span>Updated 5 min ago <button><i class="fas fa-sync"></i></button> </span>
+            </div>
+        </div>
     </div>
     <div class="search-div">
-    	<i class="fas fa-search"></i><input type="search" placeholder="Search for a campaign">
+        <i class="fas fa-search"></i><input type="search" placeholder="Search for a campaign">
     </div>
     <div class="table-container">
-    	<div class="table-menu">
-    		<select name="" id="">
-	    		<option value="">Filter</option>
-	    	</select>
-    		<button class="create-campaign"><i class="fas fa-plus-circle"></i>Create Campaign</button>
-    	</div>
-    	<div class="table-general-info ">
-    		<div class="row flex-ordering">
-    			<div class="col-1 toggle-switcher">
-	    			<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-	    		</div>
-	    		<div class="col-1">
-	    			Branch<i class="fas fa-long-arrow-alt-down"></i>
-	    		</div>
-	    		<div class="col-2">
-	    			Campaign Name<i class="fas fa-long-arrow-alt-down"></i>
-	    		</div>
-	    		<div class="col-1">
-	    			Status
-	    		</div>
-	    		<div class="col-1">
-	    			Start
-	    		</div>
-	    		<div class="col-1">
-	    			End
-	    		</div>
-	    		<div class="col-1">
-	    			Target
-	    		</div>
-	    		<div class="col-1">
-	    			Result
-	    		</div>
-	    		<div class="col-1">
-	    			Budget
-	    		</div>
-	    		<div class="col-1">
-	    			Spent
-	    		</div>
-	    		<div class="col-1">
-	    			CR/Unit
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="table-holder">
-    		<div class="row flex-ordering">
-	  			<div class="col-1 toggle-switcher">
-	    			<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-    				<input id="click-switcher" class="js-click" type="checkbox">
-	    		</div>
-	    		<div class="col-1 branch-text">
-	    			<span>Electrabel</span>
-	    			<span>Electricity</span>
-	    		</div>
-	    		<div class="col-2 campaign-name">
-	    			BE - Summer Deal Elec
-	    		</div>
-	    		<div class="col-1 status-check">
-	    			Inactive
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>14/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>21/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1">
-	    			1000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				0%
-	    			</div>
-	    		</div>
-	    		<div class="col-1">
-	    			30,000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				0%
-	    			</div>
-	    		</div>
-	    		<div class="col-1 cr-unit">
-	    			<span>&#8722;</span>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="table-holder">
-    		<div class="row flex-ordering">
-	  			<div class="col-1 toggle-switcher">
-	  				<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-    				<input id="click-switcher" class="js-click" type="checkbox" checked>
-	    		</div>
-	    		<div class="col-1 branch-text">
-	    			<span>Electrabel</span>
-	    			<span>Gas</span>
-	    		</div>
-	    		<div class="col-2 campaign-name">
-	    			FR - Summer Deal Elec
-	    		</div>
-	    		<div class="col-1 status-check check-if-active">
-	    			Active
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>21/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>28/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1">
-	    			1000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				49%
-	    			</div>
-	    		</div>
-	    		<div class="col-1">
-	    			20,000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				52%
-	    			</div>
-	    		</div>
-	    		<div class="col-1 cr-unit">
-	    			<span>20</span>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="table-holder">
-    		<div class="row flex-ordering">
-	  			<div class="col-1 toggle-switcher">
-	    			<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-    				<input id="click-switcher" class="js-click" type="checkbox">
-	    		</div>
-	    		<div class="col-1 branch-text">
-	    			<span>GDF</span>
-	    			<span>Electricity</span>
-	    		</div>
-	    		<div class="col-2 campaign-name">
-	    			BE - June Base Promo Gas
-	    		</div>
-	    		<div class="col-1 status-check">
-	    			Inactive
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>Ongoing</span>
-	    			<span></span>
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>Ongoing</span>
-	    			<span></span>
-	    		</div>
-	    		<div class="col-1">
-	    			1000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				0%
-	    			</div>
-	    		</div>
-	    		<div class="col-1">
-	    			30,000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				0%
-	    			</div>
-	    		</div>
-	    		<div class="col-1 cr-unit">
-	    			<span>&#8722;</span>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="table-holder">
-    		<div class="row flex-ordering">
-	  			<div class="col-1 toggle-switcher">
-	    			<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-    				<input id="click-switcher" class="js-click" type="checkbox" checked>
-	    		</div>
-	    		<div class="col-1 branch-text">
-	    			<span>GDF</span>
-	    			<span>Gas</span>
-	    		</div>
-	    		<div class="col-2 campaign-name">
-	    			FR - June Base Promo Gas
-	    		</div>
-	    		<div class="col-1 status-check check-if-active">
-	    			Active
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>14/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>30/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1">
-	    			1000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				21%
-	    			</div>
-	    		</div>
-	    		<div class="col-1">
-	    			15,000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				78%
-	    			</div>
-	    		</div>
-	    		<div class="col-1 cr-unit">
-	    			<span>50</span>
-	    		</div>
-    		</div>
-    	</div>
-    		<div class="table-holder">
-    		<div class="row flex-ordering">
-	  			<div class="col-1 toggle-switcher">
-	    			<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-    				<input id="click-switcher" class="js-click" type="checkbox">
-	    		</div>
-	    		<div class="col-1 branch-text">
-	    			<span>ENGIE</span>
-	    			<span>Electricity</span>
-	    		</div>
-	    		<div class="col-2 campaign-name">
-	    			BE - July Deal Elec
-	    		</div>
-	    		<div class="col-1 status-check">
-	    			Inactive
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>10/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>29/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1">
-	    			1000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				0%
-	    			</div>
-	    		</div>
-	    		<div class="col-1">
-	    			10,000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				0%
-	    			</div>
-	    		</div>
-	    		<div class="col-1 cr-unit">
-	    			<span>&#8722;</span>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="table-holder">
-    		<div class="row flex-ordering">
-	  			<div class="col-1 toggle-switcher">
-	    			<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-    				<input id="click-switcher" class="js-click" type="checkbox" checked>
-	    		</div>
-	    		<div class="col-1 branch-text">
-	    			<span>ENGINE</span>
-	    			<span>GAS</span>
-	    		</div>
-	    		<div class="col-2 campaign-name">
-	    			FR - July Deal Gas
-	    		</div>
-	    		<div class="col-1 status-check check-if-active">
-	    			Active
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>Ongoing</span>
-	    			<span></span>
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>Ongoing</span>
-	    			<span></span>
-	    		</div>
-	    		<div class="col-1">
-	    			1000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				85%
-	    			</div>
-	    		</div>
-	    		<div class="col-1">
-	    			30,000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				29%
-	    			</div>
-	    		</div>
-	    		<div class="col-1 cr-unit">
-	    			<span>30</span>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="table-holder">
-    		<div class="row flex-ordering">
-	  			<div class="col-1 toggle-switcher">
-	    			<div>
-	  					<input type="checkbox" class="click-it">
-	  					<i class="fas fa-check"></i>
-	  				</div>
-    				<input id="click-switcher" type="checkbox">
-	    		</div>
-	    		<div class="col-1 branch-text">
-	    			<span>EDF</span>
-	    			<span>Electricity</span>
-	    		</div>
-	    		<div class="col-2 campaign-name">
-	    			BE - Summer Deal Elec
-	    		</div>
-	    		<div class="col-1 status-check">
-	    			Inactive
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>10/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1 start-text">
-	    			<span>29/07/2019</span>
-	    			<span>00:00</span>
-	    		</div>
-	    		<div class="col-1">
-	    			1000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				58%
-	    			</div>
-	    		</div>
-	    		<div class="col-1">
-	    			10,000
-	    		</div>
-	    		<div class="col-1 progress-bar-container">
-	    			<div class="own-progress-bar">
-	    				
-	    			</div>
-	    			<div>
-	    				13%
-	    			</div>
-	    		</div>
-	    		<div class="col-1 cr-unit">
-	    			<span>&#8722;</span>
-	    		</div>
-    		</div>
-    	</div>
+        <div class="table-menu">
+            <select name="" id="">
+                <option value="">Filter</option>
+            </select>
+            <button class="create-campaign"><i class="fas fa-plus-circle"></i>Create Campaign</button>
+        </div>
+        <div class="table-general-info ">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                <div class="col-1">
+                    Branch<i class="fas fa-long-arrow-alt-down"></i>
+                </div>
+                <div class="col-2">
+                    Campaign Name<i class="fas fa-long-arrow-alt-down"></i>
+                </div>
+                <div class="col-1">
+                    Status
+                </div>
+                <div class="col-1">
+                    Start
+                </div>
+                <div class="col-1">
+                    End
+                </div>
+                <div class="col-1">
+                    Target
+                </div>
+                <div class="col-1">
+                    Result
+                </div>
+                <div class="col-1">
+                    Budget
+                </div>
+                <div class="col-1">
+                    Spent
+                </div>
+                <div class="col-1">
+                    CR/Unit
+                </div>
+            </div>
+        </div>
+        <div class="table-holder">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <input id="click-switcher" class="js-click" type="checkbox">
+                </div>
+                <div class="col-1 branch-text">
+                    <span>Electrabel</span>
+                    <span>Electricity</span>
+                </div>
+                <div class="col-2 campaign-name">
+                    BE - Summer Deal Elec
+                </div>
+                <div class="col-1 status-check">
+                    Inactive
+                </div>
+                <div class="col-1 start-text">
+                    <span>14/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1 start-text">
+                    <span>21/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1">
+                    1000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        0%
+                    </div>
+                </div>
+                <div class="col-1">
+                    30,000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        0%
+                    </div>
+                </div>
+                <div class="col-1 cr-unit">
+                    <span>&#8722;</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-holder">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <input id="click-switcher" class="js-click" type="checkbox" checked>
+                </div>
+                <div class="col-1 branch-text">
+                    <span>Electrabel</span>
+                    <span>Gas</span>
+                </div>
+                <div class="col-2 campaign-name">
+                    FR - Summer Deal Elec
+                </div>
+                <div class="col-1 status-check check-if-active">
+                    Active
+                </div>
+                <div class="col-1 start-text">
+                    <span>21/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1 start-text">
+                    <span>28/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1">
+                    1000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        49%
+                    </div>
+                </div>
+                <div class="col-1">
+                    20,000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        52%
+                    </div>
+                </div>
+                <div class="col-1 cr-unit">
+                    <span>20</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-holder">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <input id="click-switcher" class="js-click" type="checkbox">
+                </div>
+                <div class="col-1 branch-text">
+                    <span>GDF</span>
+                    <span>Electricity</span>
+                </div>
+                <div class="col-2 campaign-name">
+                    BE - June Base Promo Gas
+                </div>
+                <div class="col-1 status-check">
+                    Inactive
+                </div>
+                <div class="col-1 start-text">
+                    <span>Ongoing</span>
+                    <span></span>
+                </div>
+                <div class="col-1 start-text">
+                    <span>Ongoing</span>
+                    <span></span>
+                </div>
+                <div class="col-1">
+                    1000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        0%
+                    </div>
+                </div>
+                <div class="col-1">
+                    30,000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        0%
+                    </div>
+                </div>
+                <div class="col-1 cr-unit">
+                    <span>&#8722;</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-holder">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <input id="click-switcher" class="js-click" type="checkbox" checked>
+                </div>
+                <div class="col-1 branch-text">
+                    <span>GDF</span>
+                    <span>Gas</span>
+                </div>
+                <div class="col-2 campaign-name">
+                    FR - June Base Promo Gas
+                </div>
+                <div class="col-1 status-check check-if-active">
+                    Active
+                </div>
+                <div class="col-1 start-text">
+                    <span>14/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1 start-text">
+                    <span>30/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1">
+                    1000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        21%
+                    </div>
+                </div>
+                <div class="col-1">
+                    15,000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        78%
+                    </div>
+                </div>
+                <div class="col-1 cr-unit">
+                    <span>50</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-holder">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <input id="click-switcher" class="js-click" type="checkbox">
+                </div>
+                <div class="col-1 branch-text">
+                    <span>ENGIE</span>
+                    <span>Electricity</span>
+                </div>
+                <div class="col-2 campaign-name">
+                    BE - July Deal Elec
+                </div>
+                <div class="col-1 status-check">
+                    Inactive
+                </div>
+                <div class="col-1 start-text">
+                    <span>10/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1 start-text">
+                    <span>29/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1">
+                    1000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        0%
+                    </div>
+                </div>
+                <div class="col-1">
+                    10,000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        0%
+                    </div>
+                </div>
+                <div class="col-1 cr-unit">
+                    <span>&#8722;</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-holder">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <input id="click-switcher" class="js-click" type="checkbox" checked>
+                </div>
+                <div class="col-1 branch-text">
+                    <span>ENGINE</span>
+                    <span>GAS</span>
+                </div>
+                <div class="col-2 campaign-name">
+                    FR - July Deal Gas
+                </div>
+                <div class="col-1 status-check check-if-active">
+                    Active
+                </div>
+                <div class="col-1 start-text">
+                    <span>Ongoing</span>
+                    <span></span>
+                </div>
+                <div class="col-1 start-text">
+                    <span>Ongoing</span>
+                    <span></span>
+                </div>
+                <div class="col-1">
+                    1000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        85%
+                    </div>
+                </div>
+                <div class="col-1">
+                    30,000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        29%
+                    </div>
+                </div>
+                <div class="col-1 cr-unit">
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-holder">
+            <div class="row flex-ordering">
+                <div class="col-1 toggle-switcher">
+                    <div>
+                        <input type="checkbox" class="click-it">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <input id="click-switcher" type="checkbox">
+                </div>
+                <div class="col-1 branch-text">
+                    <span>EDF</span>
+                    <span>Electricity</span>
+                </div>
+                <div class="col-2 campaign-name">
+                    BE - Summer Deal Elec
+                </div>
+                <div class="col-1 status-check">
+                    Inactive
+                </div>
+                <div class="col-1 start-text">
+                    <span>10/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1 start-text">
+                    <span>29/07/2019</span>
+                    <span>00:00</span>
+                </div>
+                <div class="col-1">
+                    1000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        58%
+                    </div>
+                </div>
+                <div class="col-1">
+                    10,000
+                </div>
+                <div class="col-1 progress-bar-container">
+                    <div class="own-progress-bar">
+
+                    </div>
+                    <div>
+                        13%
+                    </div>
+                </div>
+                <div class="col-1 cr-unit">
+                    <span>&#8722;</span>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 
 <script type="text/javascript" src="js/index.js"></script>
 

@@ -63,20 +63,3 @@
     margin: 0 10px;
     color: #000;
 }
-.logo-container {
-    display: flex;
-    flex-direction: column;
-}
-.logo-container a , .logo-title-of-insta {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.logo-container img {
-    border-radius: 50%;
-    background-color: #b8d7f0;
-    border: 1px solid #75a4cb;
-    max-width: 100px;
-    height: 100px;
-    padding: 30px;
-}

@@ -1,0 +1,26 @@
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo-container a , .logo-title-of-insta {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.logo-container img {
+    border-radius: 50%;
+    background-color: #b8d7f0;
+    border: 1px solid #75a4cb;
+    max-width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+.logo-title-of-insta {
+    display: flex;
+    flex-direction: column;
+}
+.logo-title-of-insta h1, .logo-title-of-insta h4 {
+    margin: 0;
+    font-weight: 200;
+}

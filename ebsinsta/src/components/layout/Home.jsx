@@ -1,14 +1,19 @@
 import React from 'react'
 
 class Home extends React.Component {
+    state = {
+        instaLink: 'www.instagram.com',
+        headerTitle: 'Instagram'
+    }
     render() {
+        const {instaLink, headerTitle} = this.state
         return (
             <div className="insta-container">
                 <div className="insta">
-                <a href="www.instagram.com"><i className="fab fa-instagram"></i></a>
+                    <a href={instaLink}><i className="fab fa-instagram"></i></a>
                 </div>
                <div className="insta-text">
-                   <a href="www.instagram.com"><h2>Instagram</h2></a>
+                    <a href={instaLink}><h2>{headerTitle}</h2></a>
                </div>
             </div>
         )

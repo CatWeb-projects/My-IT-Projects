@@ -1,0 +1,24 @@
+@import './components/Images.css';
+@import './components/layout/Header.css';
+@import './components/layout/Logo.css';
+@import './Responsive.css';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+*, ::after, ::before {
+box-sizing: border-box;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+a {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}

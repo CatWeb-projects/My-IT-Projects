@@ -4,7 +4,11 @@ import Header from './components/layout/Header'
 import Logo from './components/layout/Logo'
 import axios from 'axios'
 import ImagesObj from './components/ImagesObj'
-import './components/Images.css'
+import './Styles.css'
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 
 
 class App extends React.Component {
@@ -20,13 +24,23 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Logo />
-        <div className="images-block">
-          <ImagesObj />
+      <Router>
+        <div className="App">
+          <Header />
+          <Logo />
+          <Route path="/">
+            <div className="images-block">
+              <ImagesObj />
+            </div>
+          </Route>
         </div>
-      </div>
+
+        {/* <Route path="/images">
+          <ImagesObj />
+        </Route> */}
+
+      </Router>
+     
     )
   }
 }

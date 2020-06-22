@@ -48,8 +48,8 @@ class ImagesObj extends React.Component {
             },
             {
                 id: 9,
-                title: 'Green Nature',
-                imgUrl: 'https://weppixel.com/sites/default/files/wallpaper/nature/60892/beautiful-spring-background-wallpapers-60892-480876.jpg'
+                title: 'Deserts',
+                imgUrl: 'https://wallpaperaccess.com/full/632198.jpg'
             }
         ]     
     

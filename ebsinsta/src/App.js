@@ -4,7 +4,7 @@ import Header from './components/layout/Header'
 import Logo from './components/layout/Logo'
 import axios from 'axios'
 import ImagesObj from './components/ImagesObj'
-import './Styles.css'
+import './Styles.scss'
 import {
   BrowserRouter as Router,
   Route,
